@@ -1,0 +1,91 @@
+package newproject;
+
+import java.util.Scanner;
+
+public class myfirstjavaprogam {
+
+	public static void main(String args[])
+	{
+
+	//1: Printing hello and my name in the next line
+	System.out.println("Hello");
+	System.out.println("Sidharth");
+	
+	
+	//2: Sum of two numbers
+	
+	Scanner s = new Scanner(System.in);
+	System.out.println("Enter num1:");
+	double num1= s.nextDouble();
+	System.out.println("Enter num2:");
+	double num2= s.nextDouble();
+	double i;	
+	i=num1+num2;
+	System.out.println("Sum of two numbers is : "+i);
+	
+	//3: Dividing two numbers
+	double j = num1/num2;
+	System.out.println("Division of two numbers is : "+j);
+	
+	//4: Operations
+	double a = s.nextDouble();
+	double b = s.nextDouble();
+	double c = s.nextDouble();
+	double d = s.nextDouble();
+	double e = s.nextDouble();
+	double f = s.nextDouble();
+	double g = s.nextDouble();
+	double h = s.nextDouble();
+
+	
+	//A:
+	double first = -a+b*c;
+	System.out.println("Output of a = "+first);
+	//B:
+	double second = (a+b) % c ;
+	System.out.println("Output of b = "+second);
+	
+	//C:
+	double third = a + -b*c / d ;
+	System.out.println("Output of c = "+third);
+	
+	
+	//D:
+	double fourth = a + b / c * d - e % f ;
+	System.out.println("Output of d = "+fourth);
+	
+	
+	//5:Product of two numbers
+	double k =num1*num2;
+	System.out.println("Product of two numbers is : "+k);
+	
+	//6:Mod of two numbers
+	
+	double l =num1%num2;
+	System.out.println("Mod of two numbers is : "+l);
+	
+	
+	//7: Table of numbers
+	System.out.println("Enter any number: ");
+	int num_table = s.nextInt();
+	for(int m=1;m<=10;m++) {
+		
+		int table=num_table*m;
+		System.out.println(num_table+"*"+m+"="+table);
+		
+	//9: computing the expression
+		
+		double exp = ((a * b - b * b) / (c - d));
+		System.out.println(exp);
+		
+		
+		//10:computing expression
+		System.out.println(a * (b - (c/d) + (c/e) - (c/f) + (c/g) - (c/h)));
+		
+	}
+	
+	
+	
+	}
+	
+}
